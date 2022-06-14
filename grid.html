@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>HTML GRID</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+	
+	<style>
+		body{
+			margin: 10px;
+			margin-left: 10px;
+			background-color: black; 
+		
+		}
+	
+
+		.container{
+			width: 100vw;
+			height: 100vh;
+
+
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr; 
+			grid-template-rows: 1fr 1fr 1fr 1fr ;
+			margin: 20px;
+			margin-right: 40px;
+
+
+			gap: 1px;
+
+
+
+			
+		}
+
+		.container div{
+			padding: 5px;
+			border: 1px solid black;
+			margin: 20px;
+		}
+
+		.content1{
+			grid-column-start: 1;
+			grid-column-end: span 2;
+			background-color: red;
+			border-bottom: 2em;
+			
+		}
+
+		.content2{
+			grid-column-start: 3;
+			grid-column-end: 4;
+			background-color: yellow;
+			
+			
+		}
+		.content3{
+			grid-row-start:2;
+			grid-row-end: 4;
+			background-color: green;
+			
+		}
+
+		.content4{
+			
+			grid-column-start:2;
+			grid-column-end:4;
+			
+			
+			
+		}
+
+	
+		}
+		.content5{
+		  
+			
+			
+
+			
+
+		}
+
+		
+
+	</style>
+
+
+
+
+
+</head>
+<body>
+	<div>
+		<center>
+	<section class="container">
+		<div class="content1">
+
+		</div>
+
+			<div class="content2" style="margin-right: 10em;">
+			    
+			</div>
+			
+			<div class="content3">
+			    
+			</div>
+			
+			
+			    <div class="content4" style="height: span 2; background-color: blue; margin-right: 10em;">
+			    
+			    </div>
+			    
+			    <div class="content5" style="height: span 2; grid-column-start: 2; grid-column-end: span 2; background-color: blue; margin-right: 10em;">
+			        
+			    </div>
+			
+			
+			
+
+	</section>
+	</center>
+	</div>
+</body>
+</html>
